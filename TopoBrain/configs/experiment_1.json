@@ -1,0 +1,35 @@
+{
+  "experiment_id": 1,
+  "name": "Matched-budget geometry-prior benchmark",
+  "model": {
+    "domain": "both",
+    "hidden_per_branch": 32,
+    "graph_depth": 1,
+    "temporal_window": 3,
+    "dropout": 0.1
+  },
+  "graph": {
+    "kind": "geometry",
+    "k": 2
+  },
+  "training": {
+    "epochs": 30,
+    "batch_size": 16,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "seeds": [
+      42,
+      43,
+      44
+    ]
+  },
+  "experiment": {
+    "graph_kinds": [
+      "geometry",
+      "identity",
+      "misaligned",
+      "random_degree",
+      "dense"
+    ]
+  }
+}

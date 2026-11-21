@@ -1,0 +1,9 @@
+# Install the appropriate PyTorch CUDA/CPU wheels first; see README.md.
+# A local +cu128 build satisfies the plain version pins below.
+torch==2.7.1
+torchvision==0.22.1
+numpy>=1.26,<3
+scipy>=1.12
+mne>=1.6
+timm>=1.0
+einops>=0.8
